@@ -1,0 +1,140 @@
+
+.all { 
+       font-family: verdana, arial, sans-serif
+ }
+
+A:linkKK  { color: #008080;font-weight: bold;  text-decoration: none }
+A:link  { color: #008080;  text-decoration: none }
+A:visited  { color:#008080;  text-decoration: none }
+A:hover  { color: #008080;font-weight: bold  }
+
+.TxtAbout  {
+	font-family: verdana,arial,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #008080;
+	background-color: #FFFFFF;
+}
+
+.TxtAbout2  {
+	color: #666633;
+	font-family: verdana,arial,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 13pt;
+}
+.TxtAbout4 { 
+	color: #aa6600; 
+	font-weight: bold; 
+	font-size: 12px; 
+	line-height: 13pt; 
+	font-family: verdana, arial, sans-serif }
+
+.TxtAbout7 { 
+ 	color: #aa6600; 
+ 	font-weight: bold; 
+ 	font-size: 12px; 
+ 	line-height: 14pt; font-family: verdana, arial, sans-serif }
+
+.TxtAbout3  {
+	font-family: verdana,arial,sans-serif;
+	font-size: 12px;
+	line-height: 14pt; 
+	color: #000080;
+	
+}
+.TxtBigAbout  {
+	font-family: verdana,arial,sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666633;
+}
+.TXTHeadline {
+	font-family: verdana,arial,sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.TXTHeadlineRed {
+	font-family: verdana,arial,sans-serif;
+	font-size: 20px;
+	color: #ff0000;
+}
+.TXTTitolo {
+	font-family: verdana,arial,sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+}
+
+TD.NAVOff {
+	font-family: verdana,arial,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666600;
+	cursor: hand;
+}
+
+.TXTBody  { 
+         color: #000000; 
+         font-weight: normal; 
+         font-size: 12px;
+         line-height: 13pt; 
+         font-family: verdana,arial, sans-serif;
+  }
+
+.TXTDate {
+	font-family: verdana,arial,sans-serif;
+	font-size: 11px;
+	font-weight: nornal;
+	color: teal;
+}
+
+.Quote  { 
+	color: #ffff99;  
+	line-height: 20pt;  
+	font-style: italic; 
+	font-size: 17px; 
+	font-family: georgia, times, serif 
+}
+
+.QuoteAut   { 
+	color: #ffff99; 	
+	font-weight: bold; 
+	font-size: 12px; 
+	font-family: georgia, times, serif; 
+	text-align: right 
+}
+
+table.esterna {
+      border-style:double;   
+      border-color:OrangeRed; 
+      border-width: 3pt;
+      margin: 7pt 3pt 9pt 1pt;
+      color: teal; 
+      font-weight: normal; 
+      font-size: 13px;
+      line-height: 13pt; 
+      font-family: verdana,arial, sans-serif;
+}
+
+table.bordoblu {
+      border-style:double;   
+      border-color:SeaGreen; 
+      border-width: 3pt;
+      margin: 7pt 3pt 9pt 1pt;
+      color: teal; 
+      font-weight: normal; 
+      font-size: 13px;
+      line-height: 13pt; 
+      font-family: verdana,arial, sans-serif;
+}
+
+.notabile { 
+	color: red; 
+	font-style: italic; 
+	font-weight: normal; 
+	font-size: 12pt; 
+	line-height: 16pt; 
+	font-family: "Times New Roman", Georgia, Times 
+}

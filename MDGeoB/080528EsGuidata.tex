@@ -1,0 +1,152 @@
+%------------- CORSO DI GEOMETRIA B -------------
+%
+%----------- Anno accademico 2007-2008 -----------
+%
+%----- Esercitazione guidata - 28 Maggio 2008 ------
+
+\documentstyle[amsfonts,11pt]{article}
+
+\def\NN{{\Bbb{N}}}
+\def\ZZ{{\Bbb{Z}}}
+\def\QQ{{\Bbb{Q}}}
+\def\RR{{\Bbb{R}}}
+\def\CC{{\Bbb{C}}}
+
+\def\to{\rightarrow}
+\def\To{\longrightarrow}
+
+\setlength{\textwidth}{16cm}
+\setlength{\textheight}{22cm}
+
+\oddsidemargin=-0mm
+\evensidemargin=-0mm
+\topmargin=-15mm
+
+\begin{document}
+
+\centerline {\Large CORSO DI GEOMETRIA B}
+
+\bigskip
+
+\centerline {\large Anno accademico 2007-2008}
+
+\bigskip
+
+\centerline {\large Esercitazione guidata - 28 Maggio 2008}
+
+\bigskip
+
+\begin{enumerate}
+
+\item
+Siano $V$ e $W$ i sottospazi di $\RR^{3}$ cos\`{i} definiti
+$$V = \{ (x,y,z) \in \RR^{3} \,|\, x = y = z \} \qquad \qquad W = \{ (x,y,z) \in \RR^{3} \,|\, z = 0 \}$$
+Provare o confutare
+\begin{itemize}
+\item[a)] Esistono omomorfismi $\varphi : \RR^{3} \To \RR^{3}$ aventi $V$ e $W$ come autospazi.
+\item[b)] Se $\varphi : \RR^{3} \To \RR^{3}$ ha $V$ e $W$ come autospazi, $\varphi$ \`{e} necessariamente un isomorfismo.
+\item[c)] Se $\varphi : \RR^{3} \To \RR^{3}$ ha $V$ e $W$ come autospazi, $\varphi$ \`{e} necessariamente semplice.
+\end{itemize}
+
+\item Dire per quali valori di $a \in \RR$ la matrice
+$$A_{a} = \left( \begin{array}{ccc} 1 & 2 & a \\ 0 & a & 0 \\ 1 & 1 & a \end{array} \right)$$
+\`{e} diagonalizzabile su $\RR$.
+
+\bigskip
+
+\item Determinare, se esistono,
+\begin{itemize}
+\item[a)] una matrice $A \in M_{3}(\RR)$ avente autospazio $V = \{ (x,y,z) \in \RR^{3} \,|\, x + 2y + 3z = 0 \}$;
+\item[b)] una matrice $B \in M_{3}(\RR)$ avente autospazi $V_{1} = \{ (x,y,z) \in \RR^{3} \,|\, x = y = z \}$ e \linebreak
+$V_{2} = \{ (x,y,z) \in \RR^{3} \,|\, x = y = - z \}$;
+\item[c)] una matrice ortogonale $C \in M_{3}(\RR)$ avente due soli autospazi;
+\item[d)] una matrice ortogonale $D \in M_{3}(\RR)$ avente tre autospazi.
+\end{itemize}
+
+\item
+Sia $\varphi : \RR^{3} \To \RR^{3}$ l'endomorfismo associato, rispetto alla base canonica, alla matrice
+$$A = \left ( \begin{array}{rrr} 0 & 2 & 0 \\ 4 & -2 & 0 \\ 0 & 0 & 1 \end{array} \right )$$
+\begin{itemize}
+\item[a)] Provare che $\varphi$ \`{e} semplice e determinare una base $B$ di autovettori.
+\item[b)] Determinare, se esiste, una base ortogonale di autovettori o provare che non esiste.
+\item[c)] Esibire, se esiste, un endomorfismo $\psi : \RR^{3} \To \RR^{3}$ tale che $\varphi, \psi$ siano linearmente indipendenti ma abbiano la stessa base $B$ di autovettori.
+\end{itemize}
+
+\end{enumerate}
+
+\newpage
+
+\centerline {\Large CORSO DI GEOMETRIA B}
+
+\bigskip
+
+\centerline {\large Esercitazione guidata - 28 Maggio 2008 - Esempi di soluzioni}
+
+\begin{enumerate}
+
+\bigskip
+
+\item
+\begin{itemize}
+\item[a)] VERO : basta porre $\varphi (1,0,0) = \varphi (0,1,0) = (0,0,0)$ e $\varphi (1,1,1) = (1,1,1)$ 
+\item[b)] FALSO : come mostra l'esempio precedente.
+\item[c)] VERO : infatti, poich\'{e} $(x,y,z) = (x - z)(1,0,0) + (y - z)(0,1,0) + z(1,1,1)$, si ha $\RR^{3} = V + W$
+\end{itemize}
+
+\item
+Il polinomio caratteristico di $A_{a}$ \`{e}
+$$\left | \begin{array}{ccc} 1 - X & 2 & a \\ 0 & a - X & 0 \\ 1 & 1 & a - X \end{array} \right | = X(X - a)(-X + a + 1)$$
+e quindi gli autovalori sono $\lambda_{1} = 0$, $\lambda_{2} = a$ e $\lambda_{3} = a + 1$. \newline
+Una prima deduzione \`{e} quindi che i tre autovalori non sono mai tutti e tre coincidenti. \newline
+E una seconda che per $a \neq 0$ ed $a \neq -1$ i tre autovalori sono distinti e la matrice \`{e} diagonalizzabile. \newline
+Per $a = 0$ si ha $\lambda_{1} = \lambda_{2}$ e per $a = -1$ si ha $\lambda_{1} = \lambda_{3}$ e le matrici corrispondenti sono sono
+$$A_{0} = \left ( \begin{array}{ccc} 1 & 2 & 0 \\ 0 & 0 & 0 \\ 1 & 1 & 0 \end{array} \right ) \qquad \qquad A_{-1} = \left ( \begin{array}{rrr} 1 & 2 & -1 \\ 0 & -1 & 0 \\ 1 & 1 & -1 \end{array} \right )$$
+In entrambi i casi la molteplicit\`{a} dell'autovalore $\lambda_{1}$ \`{e} $2$, mentre le matrici $A_{0}$ e $A_{-1}$ hanno caratteristica $2$; quindi le due matrici non sono diagonalizzabili.
+
+\medskip
+
+\item 
+\begin{itemize}
+\item[a)] Una base di $V$ \`{e} $\{ e_{1} = (1,1,-1), e_{2} = (4,1,-2) \}$. Aggiungiamo $e_{3} = (0,0,1)$ per ottenere una base $E$ di $\RR^{3}$ (si vede subito che i tre vettori $e_{1}, e_{2}, e_{3}$ sono indipendenti). \newline
+A questo punto definiamo un omomorfismo $\varphi : \RR^{3} \rightarrow \RR^{3}$ ponendo$$\varphi(e_{1}) = \varphi(e_{2}) = \underline{0} \qquad \varphi(e_{3}) = e_{3}$$
+Riferendo $\varphi$ alla base $E$, si ottiene la matrice
+$$A = \left ( \begin{array}{ccc} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{array} \right )$$
+che soddisfa la condizione posta.
+\item[b)] I vettori $e_{1} = (1,1,1)$ ed $e_{2} = (1,1,-1)$ sono rispettivamente una base per $V_{1}$ e una base per $V_{2}$. Aggiungiamo $e_{3} = (1,0,0)$ per ottenere una base $F$ di $\RR^{3}$ (si vede subito che i tre vettori $e_{1}, e_{2}, e_{3}$ sono indipendenti). \newline
+A questo punto definiamo un omomorfismo $\varphi : \RR^{3} \rightarrow \RR^{3}$ ponendo
+$$\varphi(e_{1}) = \underline{0} \qquad \varphi(e_{2}) = e_{2} \qquad \varphi(e_{3}) = 2e_{3}$$
+Riferendo $\varphi$ alla base $F$, si ottiene la matrice
+$$B = \left ( \begin{array}{ccc} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{array} \right )$$
+che soddisfa la condizione posta.
+\item[c)] Poniamo $V_{1} = \{ (x,y,z) \in \RR^{3} \,|\, x = y = 0 \}$ e $V_{2} = \{ (x,y,z) \in \RR^{3} \,|\, z = 0 \}$. \newline
+Il primo ha la base $\{e_{1} = (0,0,1) \}$ e il secondo ha la base $\{ e_{2} = (1,0,0), e_{3} = (0,1,0) \}$.
+Poich\'{e} si vede subito che i tre vettori $e_{1}, e_{2}, e_{3}$ sono indipendenti e costituiscono una base $G$, possiamo definire un omomorfismo $\varphi : \RR^{3} \rightarrow \RR^{3}$ ponendo
+$$\varphi(e_{1}) = e_{1} \qquad \varphi(e_{2}) = - e_{2} \qquad \varphi(e_{3}) = - e_{3}$$
+Riferendo $\varphi$ a questa base si ottiene la matrice
+$$C = \left ( \begin{array}{rrr} 1 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & -1 \end{array} \right )$$
+che \`{e} ortogonale, perch\'{e} righe e colonne sono vettori di lunghezza $1$ e perch\'{e} le righe sono fra loro ortogonali e cos\`{i} pure le colonne.
+\item[d)] Una matrice ortogonale con tre autospazi \`{e} simile a una matrice diagonale avente tre autovalori distinti sulla diagonale principale. Ma una matrice ortogonale reale ha solo autovalori di modulo $1$ e non esistono tre numeri reali distinti aventi modulo $1$; quindi una siffatta matrice non esiste.
+\end{itemize}
+
+\item
+\begin{itemize}
+\item[a)] Il polinomio caratteristico di $A$ \`{e}
+$$(1 - X)((-X)(-X - 2) - 8) = (1 - X)(X^{2} + 2X - 8) = (1 - X)(X + 4)(X - 2)$$
+quindi $A$ ha i tre autovalori distinti 1, 2 e -4. Perci\`{o} l'endomorfismo \`{e} semplice. \newline
+Gli autospazi hanno tutti dimensione uno; quindi, per determinare una base formata da autovettori, basta considerare un vettore non nullo in ciascun autospazio. \newline
+Basta quindi dare, nell'equazione seguente, a $\lambda$ i valori 1, 2 e -4 e determinare ogni volta una soluzione non nulla :
+$$\left ( \begin{array}{ccc} -\lambda & 2 & 0 \\ 4 & -2-\lambda & 0 \\ 0 & 0 & 1-\lambda \end{array} \right ) \left ( \begin{array}{c} x \\ y \\ z \end{array} \right ) = \left ( \begin{array}{c}  0 \\ 0 \\ 0 \end{array} \right )$$
+Si trova cos\`{i}, ad esempio, $V_{1} = $$\cal{L}$$(0,0,1), V_{2} = $$\cal{L}$$(1,1,0)$ e $V_{-4} = $$\cal{L}$$(1,-2,0,)$. \newline
+Perci\`{o} $B = \{ (0,0,1),(1,1,0),(1,-2,0,) \}$ \`{e} una base (ordinata) di autovettori.
+\item[b)] Condizione necessaria affinch\`{e} esista una base ortogonale di autovettori \`{e} che gli autospazi siano a due a due ortogonali. \newline
+Ora, $V_{2} = $$\cal{L}$$(1,1,0)$ e  $V_{-4} = $$\cal{L}$$(1,-2,0,)$ non sono ortogonali, quindi una base ortogonale formata da autovettori non esiste.
+\item[c)] La matrice associata a $\varphi$ rispetto alla base $B$, \`{e} 
+$$M = \left ( \begin{array}{rrr} 1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & -4 \end{array} \right )$$
+Sia $\psi$ l'endomorfismo associato, rispetto a $B$, alla matrice
+$$N = \left ( \begin{array}{rrr} 3 & 0 & 0 \\ 0 & 2 & 0 \\0 & 0 & -4 \end{array} \right )$$
+$\varphi$ e $\psi$ sono linearmente indipendenti perch\'{e} tali sono le matrici associate (rispetto alla STESSA base $B$), ed essendo le due matrici diagonali $B$ \`{e} una base di autovettori per entrambe.
+\end{itemize}
+
+\end{enumerate}
+
+\end{document}
